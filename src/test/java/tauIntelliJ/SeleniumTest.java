@@ -1,4 +1,4 @@
-package taudemo;
+package taudemo2;
 
 import browser.BrowserGetter;
 import org.junit.jupiter.api.AfterAll;
@@ -8,18 +8,10 @@ import org.junit.jupiter.api.TestInstance;
 import org.openqa.selenium.WebDriver;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.TestInstance.Lifecycle.PER_CLASS;
 
-//comment
-
-/**
- * Javadoc
- */
-
-//todo
-@TestInstance(PER_CLASS)
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class SeleniumTest {
-    private BrowserGetter browserGetter = new BrowserGetter();
+    private final BrowserGetter browserGetter = new BrowserGetter();
     private WebDriver driver;
 
     @BeforeAll
@@ -35,9 +27,10 @@ public class SeleniumTest {
     @Test
     public void openTheComPageAndCheckTheTitle() {
         String expectedComTitle = "Example Domain";
-        driver.get("https://www.example.com");
+        driver.get("https://www.example.org");
         assertEquals(expectedComTitle, driver.getTitle());
     }
+
     @Test
     public void openTheOrgPageAndCheckTheTitle() {
         String expectedOrgTitle = "Example Domain";

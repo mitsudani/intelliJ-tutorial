@@ -1,4 +1,4 @@
-package taudemo;
+package taudemo2;
 
 import org.junit.jupiter.api.Test;
 
@@ -15,5 +15,4 @@ public class WithAssertionsTest {
     public void secondAssertion() {
         assertEquals(45, 45);
     }
-
 }
