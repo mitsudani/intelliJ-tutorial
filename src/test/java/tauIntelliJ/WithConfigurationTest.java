@@ -1,4 +1,4 @@
-package taudemo2;
+package tauIntelliJ;
 
 import browser.BrowserGetter;
 import org.junit.jupiter.api.AfterAll;

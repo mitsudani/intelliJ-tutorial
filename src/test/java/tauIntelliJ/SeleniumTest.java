@@ -1,4 +1,4 @@
-package taudemo2;
+package tauIntelliJ;
 
 import browser.BrowserGetter;
 import org.junit.jupiter.api.AfterAll;
@@ -8,6 +8,14 @@ import org.junit.jupiter.api.TestInstance;
 import org.openqa.selenium.WebDriver;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+
+//comment
+
+/**
+ * Javadoc
+ */
+
+//todo
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class SeleniumTest {

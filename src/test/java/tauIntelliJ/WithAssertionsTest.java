@@ -1,4 +1,4 @@
-package taudemo2;
+package tauIntelliJ;
 
 import org.junit.jupiter.api.Test;
 
